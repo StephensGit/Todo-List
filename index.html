@@ -17,32 +17,34 @@
   <body>
     <div class="container">
       <header>
-        <!-- <img src="./images/bg-mobile-light.jpg" alt="background-image-light" /> -->
-        <div class="flex-row">
-          <h1>Todo</h1>
-          <img src="./images/icon-moon.svg" alt="moon-icon" />
+        <div class="flex-row header-top">
+          <h1>TODO</h1>
+          <img src="./images/icon-moon.svg" class="moon-icon" alt="moon-icon" />
         </div>
         <form action="">
-          <div class="flex-row">
+          <div class="flex-row form-wrapper align-content-center">
             <div class="empty-checkbox"></div>
-            <input type="text" />
+            <input type="text" placeholder="Create a new todo..." />
           </div>
         </form>
       </header>
+
       <section>
-        <div class="flex-row list-wrapper">
+        <div class="list-wrapper">
           <ul>
-            <li>
-              <div class="empty-checkbox"></div>
-              Complete online Javascript course
-              <img src="./images/icon-cross.svg" alt="" />
+            <li class="flex-row align-content-center list-item">
+              <div class="list-item-wrapper-left flex-row align-content-center">
+                <div class="empty-checkbox"></div>
+                <p>Complete online Javascript course</p>
+              </div>
+              <img src="./images/icon-cross.svg" class="cross-icon" alt="" />
             </li>
           </ul>
-          <div class="flex-row">
+          <div class="flex-row item-wrapper-one align-content-center">
             <p>items left</p>
             <p>Clear Completed</p>
           </div>
-          <div class="flex-row">
+          <div class="flex-row item-wrapper-two align-content-center">
             <p>All</p>
             <p>Active</p>
             <p>Completed</p>
