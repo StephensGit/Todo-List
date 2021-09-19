@@ -17,16 +17,22 @@
   <body>
     <div class="container">
       <header>
-        <div class="flex-row header-top">
-          <h1>TODO</h1>
-          <img src="./images/icon-moon.svg" class="moon-icon" alt="moon-icon" />
-        </div>
-        <form action="">
-          <div class="flex-row form-wrapper align-content-center">
-            <div class="empty-checkbox"></div>
-            <input type="text" placeholder="Create a new todo..." />
+        <div class="header-container">
+          <div class="flex-row header-top">
+            <h1>TODO</h1>
+            <img
+              src="./images/icon-moon.svg"
+              class="moon-icon"
+              alt="moon-icon"
+            />
           </div>
-        </form>
+          <form action="">
+            <div class="flex-row form-wrapper align-content-center">
+              <div class="empty-checkbox-gradient"></div>
+              <input type="text" placeholder="Create a new todo..." />
+            </div>
+          </form>
+        </div>
       </header>
 
       <section>
@@ -34,20 +40,38 @@
           <ul>
             <li class="flex-row align-content-center list-item">
               <div class="list-item-wrapper-left flex-row align-content-center">
-                <div class="empty-checkbox"></div>
+                <div class="empty-checkbox-gradient">
+                  <div class="empty-checkbox-fill"></div>
+                </div>
                 <p>Complete online Javascript course</p>
               </div>
               <img src="./images/icon-cross.svg" class="cross-icon" alt="" />
             </li>
           </ul>
-          <div class="flex-row item-wrapper-one align-content-center">
-            <p>items left</p>
-            <p>Clear Completed</p>
+          <div class="mobile-item-options">
+            <div class="flex-row item-wrapper-one align-content-center">
+              <p>5 items left</p>
+              <p>Clear Completed</p>
+            </div>
+            <div class="flex-row item-wrapper-two align-content-center">
+              <p>All</p>
+              <p>Active</p>
+              <p>Completed</p>
+            </div>
           </div>
-          <div class="flex-row item-wrapper-two align-content-center">
-            <p>All</p>
-            <p>Active</p>
-            <p>Completed</p>
+
+          <div class="desktop-item-options flex-row align-content-center">
+            <div class="flex-row">
+              <p>5 items left</p>
+            </div>
+            <div class="flex-row item-state">
+              <p>All</p>
+              <p>Active</p>
+              <p>Completed</p>
+            </div>
+            <div class="flex-row clear">
+              <p>Clear Completed</p>
+            </div>
           </div>
           <div class="footer">
             <p>Drag and drop to reorder list</p>
