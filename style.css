@@ -78,6 +78,7 @@ h1 {
 }
 
 .moon-icon {
+  cursor: pointer;
   height: 20px;
   width: 20px;
   fill: var(--white);
@@ -246,6 +247,11 @@ li > div > p {
 
 .desktop-item-options {
   display: none;
+}
+
+.desktop-item-options p:hover {
+  cursor: pointer;
+  color: var(--body-colour-light);
 }
 
 .footer {
