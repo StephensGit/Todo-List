@@ -1,12 +1,21 @@
+// Get reference to the body to toggle between light & dark mode
+const theme = document.getElementById('theme-toggler');
 // reference to the form
 const form = document.querySelector('.form');
 // reference to the ul, to later add new todos
 const list = document.querySelector('ul');
 // reference clear button
 const clear = document.querySelector('.clear');
+const clearCompletedDesktop = document.querySelector('.clearCompletedDesktop');
 
 // Array to store all todos
 let todos = [];
+
+theme.addEventListener('click', () => {
+  document.querySelector('body').classList = [
+    theme.checked ? 'dark-mode' : 'light-mode',
+  ];
+});
 
 // function to create todo
 const generateTodoTemplate = (todo) => {
@@ -58,6 +67,16 @@ list.addEventListener('click', (e) => {
 
 // Clear all completed items
 clear.addEventListener('click', () => {
+  console.log('desktop');
+  document
+    .querySelectorAll('.list-item input[type="checkbox"]:checked')
+    .forEach((item) => {
+      removeTodoItem(item.closest('li'));
+    });
+});
+
+clearCompletedDesktop.addEventListener('click', () => {
+  console.log('desktop');
   document
     .querySelectorAll('.list-item input[type="checkbox"]:checked')
     .forEach((item) => {

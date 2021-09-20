@@ -14,18 +14,16 @@
     <link rel="stylesheet" href="style.css" />
     <title>Stephen Moran | Todo app</title>
   </head>
-  <body>
+  <body class="light-mode">
     <div class="container">
       <header>
         <div class="header-container">
-          <div class="flex-row header-top">
+          <div class="flex-row header-top align-content-center">
             <h1>TODO</h1>
-            <img
-              src="./images/icon-moon.svg"
-              class="moon-icon"
-              id="theme-toggler"
-              alt="moon-icon"
-            />
+            <div class="theme align-content-center">
+              <input type="checkbox" name="theme-toggler" id="theme-toggler" />
+              <label for="theme-toggler"></label>
+            </div>
           </div>
           <form class="form">
             <div class="flex-row form-wrapper align-content-center">
@@ -70,15 +68,15 @@
 
           <div class="desktop-item-options flex-row align-content-center">
             <div class="flex-row">
-              <p><span>5</span> items left</p>
+              <p class="items-left"><span>5</span> items left</p>
             </div>
             <div class="flex-row item-state">
               <p id="all">All</p>
               <p id="active">Active</p>
               <p id="completed">Completed</p>
             </div>
-            <div class="flex-row clear">
-              <p>Clear Completed</p>
+            <div class="flex-row clearCompletedDesktop">
+              <p class="">Clear Completed</p>
             </div>
           </div>
           <div class="footer">
