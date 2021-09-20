@@ -185,6 +185,11 @@ ul li label {
   width: 22px;
 }
 
+/* Only applied when user chooses an option from 'all', 'active' or 'completed' */
+ul li.hidden {
+  display: none;
+}
+
 ul li input[type='checkbox'] ~ .checkmark {
   border: 1px solid var(--checkbox-stroke-light);
   border-radius: 50%;
