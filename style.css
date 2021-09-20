@@ -19,7 +19,7 @@
   --border-fill-dark: #393a4b;
   --border-fill-light: #979797;
   --section-background-light: #f2f2f2;
-  --section-background-dark: #3a7cfd;
+  --section-background-dark: #171823;
   --item-background-dark: #25273d;
   --selected-items-light: #3a7cfd;
   --selected-items-dark: #5b5e7e;
@@ -30,6 +30,12 @@
   --mr: 26px;
   --mt: 48px;
   /* linear 3710BD A42395 */
+}
+
+.dark_mode {
+  --white: #171823;
+  --body-colour-light: #c8cbe7;
+  --section-background-light: #171823;
 }
 
 body {
