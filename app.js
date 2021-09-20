@@ -8,8 +8,12 @@ const list = document.querySelector('ul');
 const clear = document.querySelector('.clear');
 const clearCompletedDesktop = document.querySelector('.clearCompletedDesktop');
 
-// Array to store all todos
-let todos = [];
+// Gets a referenece to the span containing the number of items left
+let totalItemsLeft = document.querySelector('.items-left > span');
+
+totalItemsLeft.innerText = document.querySelectorAll(
+  '.list-item input[type="checkbox"]'
+).length;
 
 theme.addEventListener('click', () => {
   document.querySelector('body').classList = [
@@ -19,8 +23,6 @@ theme.addEventListener('click', () => {
 
 // function to create todo
 const generateTodoTemplate = (todo) => {
-  todos.push(todo);
-  console.log(todos);
   const html = `
 
     <li class="flex-row align-content-center list-item">
@@ -34,6 +36,12 @@ const generateTodoTemplate = (todo) => {
   `;
 
   list.innerHTML += html;
+  updateItemsCount(1);
+};
+
+const updateItemsCount = (number) => {
+  console.log(totalItemsLeft);
+  totalItemsLeft.innerText = +totalItemsLeft.innerText + number;
 };
 
 // Event Listener for submitting form
