@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Todo app</title>
+    <title>Stephen Moran | Todo app</title>
   </head>
   <body>
     <div class="container">
@@ -44,13 +44,14 @@
         <div class="list-wrapper">
           <ul class="ul">
             <li class="flex-row align-content-center list-item">
-              <div class="list-item-wrapper-left flex-row align-content-center">
-                <div class="empty-checkbox-gradient">
-                  <div class="empty-checkbox-fill"></div>
-                </div>
-                <p>Complete online Javascript course</p>
-              </div>
-              <img src="./images/icon-cross.svg" class="cross-icon" alt="" />
+              <label
+                class="list-item-wrapper-left flex-row align-content-center"
+              >
+                <input class="checkbox" type="checkbox" name="todoItem" />
+                <span class="checkmark"></span>
+                <span class="text">Complete online Javascript course</span>
+              </label>
+              <span class="cross-icon"></span>
             </li>
           </ul>
           <div class="mobile-item-options">
@@ -59,8 +60,8 @@
               <p>Clear Completed</p>
             </div>
             <div class="flex-row item-wrapper-two align-content-center">
-              <p>All</p>
-              <p>Active</p>
+              <p id="all-items">All</p>
+              <p id="act">Active</p>
               <p>Completed</p>
             </div>
           </div>

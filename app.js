@@ -7,14 +7,14 @@ const list = document.querySelector('ul');
 // function to create todo
 const generateTodoTemplate = (todo) => {
   const html = `
+
     <li class="flex-row align-content-center list-item">
-        <div class="list-item-wrapper-left flex-row align-content-center">
-            <div class="empty-checkbox-gradient">
-                <div class="empty-checkbox-fill"></div>
-            </div>
-            <p>${todo}</p>
-        </div>
-        <img src="./images/icon-cross.svg" class="cross-icon" alt="" />
+        <label class="list-item-wrapper-left flex-row align-content-center">
+        <input class="checkbox" type="checkbox" name="todoItem" />
+        <span class="checkmark"></span>
+        <span class="text">${todo}</span>
+        </label>
+        <span class="cross-icon"></span>
     </li>
   `;
 
@@ -29,6 +29,17 @@ form.addEventListener('submit', (e) => {
   if (todo.length) {
     generateTodoTemplate(todo);
     form.reset();
+  }
+});
+
+// delete todo item
+list.addEventListener('click', (e) => {
+  if (e.target.classList.contains('cross-icon')) {
+    e.target.parentElement.remove();
+  }
+  // complete todo item
+  else if (e.target.classList.contains('checkmark')) {
+    e.target.nextElementSibling.classList.add('complete-todo');
   }
 });
 
