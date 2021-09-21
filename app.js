@@ -40,7 +40,7 @@ const generateTodoTemplate = (todo) => {
 };
 
 const updateItemsCount = (number) => {
-  console.log(totalItemsLeft);
+  console.log(totalItemsLeft.innerText);
   totalItemsLeft.innerText = +totalItemsLeft.innerText + number;
 };
 
@@ -61,6 +61,8 @@ form.addEventListener('submit', (e) => {
 // Delete todo item
 const removeTodoItem = (item) => {
   item.remove();
+  updateItemsCount(-1);
+  console.log(totalItemsLeft.innerText);
 };
 
 list.addEventListener('click', (e) => {
@@ -84,7 +86,6 @@ clear.addEventListener('click', () => {
 });
 
 clearCompletedDesktop.addEventListener('click', () => {
-  console.log('desktop');
   document
     .querySelectorAll('.list-item input[type="checkbox"]:checked')
     .forEach((item) => {
