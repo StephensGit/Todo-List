@@ -5,7 +5,7 @@ This is my solution to the [Todo app challenge on Frontend Mentor](https://www.f
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [Users should be able to](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
