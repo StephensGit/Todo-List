@@ -14,11 +14,9 @@ This is my solution to the [Todo app challenge on Frontend Mentor](https://www.f
 
 
 ## Overview
-This project uses the Github public API to allow users to search for Github users by their username. It's built with a mobile first workflow, encorporating HTML, CSS, CSS variables, Flexbox and Javascript. It also allows usrers to toggle between light/dark mode.
+This is a Todo application that's built with a mobile first workflow, encorporating HTML, CSS, CSS variables, Flexbox and Javascript(ES6). It also allows usrers to toggle between light/dark mode.  
 
-### The challenge
-
-Users should be able to:
+### Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
