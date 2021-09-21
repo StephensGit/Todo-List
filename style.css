@@ -326,7 +326,7 @@ li > div > p {
 
 @media screen and (min-width: 576px) {
   header {
-    background-image: var(--background-image-mobile);
+    background-image: var(--background-image-desktop);
   }
 
   .header-container,
