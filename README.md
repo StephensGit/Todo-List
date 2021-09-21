@@ -34,7 +34,7 @@ This is a Todo application that's built with a mobile first workflow, encorporat
 
 ### Screenshot
 
-![Stephen Moran Todo app](https://user-images.githubusercontent.com/45046901/134171931-4da98e1d-e8c9-4fc4-95be-b8a0d71eb08e.png)
+![Stephen Moran Todo app](https://user-images.githubusercontent.com/45046901/134173276-1394c9c7-48cb-4be1-ace5-d9b377e58305.png)
 
 
 ## My process
