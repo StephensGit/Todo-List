@@ -14,7 +14,7 @@ This is my solution to the [Todo app challenge on Frontend Mentor](https://www.f
 
 
 ## Overview
-This is a Todo application that's built with a mobile first workflow, encorporating HTML, CSS, CSS variables, Flexbox and Javascript(ES6). It also allows usrers to toggle between light/dark mode.  
+This is a Todo application that's built with a mobile first workflow, encorporating HTML, CSS, CSS variables, Flexbox and Javascript(ES6). It also allows users to toggle between light/dark mode. This was built to replicate the design spec attached in the design folder.  
 
 ### Users should be able to:
 
